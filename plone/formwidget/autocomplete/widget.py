@@ -2,7 +2,6 @@ from AccessControl import getSecurityManager
 from AccessControl import ClassSecurityInfo
 from Acquisition import Explicit
 from Acquisition.interfaces import IAcquirer
-from App.class_init import InitializeClass
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 import z3c.form.interfaces
@@ -13,6 +12,11 @@ from z3c.formwidget.query.widget import QuerySourceCheckboxWidget
 from zope.interface import implementer_only, implementer
 
 from plone.formwidget.autocomplete.interfaces import IAutocompleteWidget
+
+try:
+    from AccessControl.class_init import InitializeClass
+except:
+    from App.class_init import InitializeClass
 
 
 class AutocompleteSearch(BrowserView):
