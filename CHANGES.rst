@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.4.0+enfold2 (unreleased)
+--------------------------
+
+- Nothing changed yet.
+
+
 1.4.0+enfold1 (2021-06-24)
 --------------------------
 
