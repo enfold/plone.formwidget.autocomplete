@@ -14,7 +14,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Fix Plone 5.2 import
+  [frapell]
 
 
 1.4.0 (2020-01-27)
